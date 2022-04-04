@@ -1,0 +1,269 @@
+/* 
+Colores Primarios:
+Azul: #001D3D
+Amarillo: #FFC300
+Celeste: #219EBC
+Blanco: #FFFFFF
+
+Fuente Principal: JOST
+Light 300
+Regular 400
+Medium 500
+font-family: 'Jost', sans-serif;
+
+Fuente secundaria: PT Sans
+font-family: 'PT Sans', sans-serif;
+
+Colores RGB:
+
+Azul: R:0 G:29 B:61
+
+*/
+
+/* Ajustes Generales */
+
+:root {
+  --azul: #001d3d;
+  --amarillo: #ffc300;
+  --celeste: #219ebc;
+  --blanco: #ffffff;
+  --fondoPrimario: #eeeeee;
+  --fondoSecundario: #ffffff;
+}
+
+
+body {
+  background-color: var(--azul);
+}
+
+p {
+  /* font-family: "PT Sans", sans-serif; */
+  font-family: "Roboto";
+  font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+}
+
+section{
+  padding: 5% 0;
+}
+
+
+/* ----------- */
+
+/* Navbar */
+.navbar {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.navbar ul li a {
+  padding-bottom: 12px;
+}
+
+.navbar ul li a:hover {
+  padding-bottom: 8px;
+  border-bottom: 4px solid var(--celeste);
+}
+
+/* Header */
+
+header {
+  background-color: rgba(0, 29, 61, 1);
+  background-image: url("../img/portada3.jpg"); 
+  background-size: cover;
+  background-position: center;
+}
+
+header .container-text{
+  padding: 5% 0;
+}
+
+header .header-box{
+  width: 60%;
+}
+
+header .header-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--amarillo) !important; 
+}
+
+header .header-description {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+header .header-arrow{
+  padding-bottom: 2%;
+} 
+
+header .header-arrow a i{
+  color: white;
+  font-size: 2.5rem;
+}
+header .header-arrow a i:hover{
+  color: var(--amarillo);
+}
+
+/*Sobre Nosotros*/
+
+#about-us{ 
+  background-color: var(--fondoPrimario);
+  padding: 8% 0;
+}
+
+#about-us .social-media{
+  color: var(--celeste);
+}
+
+#about-us .img-about-us {
+  border-radius: 2%;
+}
+
+
+/* Team */
+
+#team {
+  padding-bottom: 0;
+  background-color: var(--fondoPrimario);
+}
+
+#team .anclas a i{
+  color: var(--celeste);
+  font-size: 1.1rem;
+}
+
+#team .anclas a i:hover{
+  color: var(--azul);
+}
+
+#team .item:hover{
+  border: 1px var(--celeste) solid;
+  background-color: aliceblue;
+}
+
+
+/* Servicios */
+
+#services {
+  background-color: var(--fondoSecundario);
+}
+#services .title{
+  background-color: var(--fondoPrimario);
+}
+
+#services .img-service img{
+height: 100% !important;  
+object-fit: cover;
+} 
+
+#services .service-title{
+  color: black;
+}
+
+#services .container-service{
+  background: var(--blanco);
+  padding: 2%;
+}
+
+
+/* Wave */
+#wave {
+  /* Evitamos la linea blanca */
+  margin-top: -2px;
+}
+
+/* Contacto */
+
+#contact,
+#contact .container-contact .form-container {
+  background-color: var(--fondoSecundario);
+}
+
+#seccion-mapa {
+  background-color: var(--celeste);
+  background-image: url("../img/mapa.png");
+  background-position: center;
+  filter: brightness(0.7);
+  height: 300px;
+}
+
+#contact .form-container {
+  background-color: var(--blanco);
+}
+
+#contact .form-container button {
+  background: var(--azul);
+  padding: 2% 10%;
+}
+
+#contact .form-container button:hover {
+  opacity: 90%;
+}
+
+#contact .form-container form textarea {
+  resize: none;
+}
+
+#contact .contact-details .details {
+  margin: 0 !important;
+}
+
+#contact .contact-details .details i {
+  margin-right: 4%;
+  color: var(--celeste);
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--azul);
+  border-top: 2px solid var(--celeste);
+}
+
+footer .container .copy {
+  border-top: 2px solid var(--celeste);
+  padding: 0.5em 0;
+  font-family: "PT Sans", sans-serif !important;
+  font-weight: bold;
+}
+
+footer .social-media{
+  color: #ffffff;
+}
+
+.social-media:hover{
+  opacity: 70%;
+}
+
+
+
+
+
+/* MediaQuerys */
+
+@media (max-width:768px){
+  header .header-title{
+    text-align: center !important;
+    font-size: 2.5rem;
+  }
+
+  header .header-divider{
+    text-align: center;
+  }
+
+  header .header-description {
+    text-align: center !important;
+  }
+
+  }
